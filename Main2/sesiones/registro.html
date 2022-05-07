@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>Login </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="estiloLogin.css">
+</head>
+<body background="azul.gif">
+    <header class="header">
+        <div>
+            <figure>
+            </figure>
+        </div>    
+        <div id= "encabezado">
+            <div id="logo">
+                BlasterBlog
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="../index.php" class="active-menu">Inicio</a></li>
+                    <li><a href="../paginacion.php" class="enlace">paginacion</a></li>
+                    <li><a href="noticias.php" class="enlace">noticias</a></li>
+                    <li><a href="registro.html" class="enlace">Registro</a></li>
+                    <li><a href="IniciarSesion.html" class="enlace">Acceder</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ##### FORMULARIO / SE CONECTA A CONEXIONCREARUSUARIO.PHP / OLVIDÉ MI CONTRASEÑA Todavía esta incompleto-->
+
+    <section class="form-login">
+        <form method="post" action="ConexionCrearUsuario.php">
+        <h5>Registrate</h5>
+        <label for="usuario">Ingrese su nombre de usuario:</label>
+        <input class="controls" type="text" name="usuario" pattern="[a-zA-Z0-9]+" maxlength="8" placeholder="Usuario" id="usuario" required>
+        <label for="correo">Ingrese su correo electrónico:</label>
+        <input class="controls" type="email" name="correo" placeholder="Correo electrónico" id="email" required>
+        <label for="contraseña">Ingrese su contraseña:</label>
+        <input class="controls" type="password" name="password" maxlength="20" autocomplete="new-password" placeholder="Contraseña" id="password" required>
+        <label for="edad">Ingrese su edad:</label>
+        <input class="controls" type="number" name="edad" min="18" placeholder="Edad" id="edad" required>
+        <input class="buttons" type="submit" name="" value="Ingresar">
+        <p><a href="IniciarSesion.html">¿ Ya tienes cuenta ? </a></p> <!---Esta funcion no esta programada pero es mas correcto que decir Olvide mi contraseña-->
+        </form>
+    </section>
+</body>
